@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+/* 
+
+
+## about me section
+
+
+*/
+
+.about-me {
+    padding: 3rem 4rem 0 4rem;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.about-me--head-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me--head {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 6rem;
+}
+
+.about-me--name {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 1rem;
+}
+
+.about-me--job-title {
+    display: block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+.about-me--img {
+    float: right;
+    border-radius: 1rem;
+    width: 20%;
+    height: auto;
+    margin: 1rem;
+    
+}
+
+.about-me--info {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me--info-text {
+    margin-right: 5rem;
+    width: 50%;
+}
+
+/* 
+
+
+## Skills Section
+
+
+*/
+
+.about-me--skills {
+    margin-bottom: 4rem;
+    border-bottom: #fff solid 0.6rem;
+    padding-bottom: 2rem;
+    margin-top: 3rem;
+
+}
+
+.about-me--skills-container {
+    display: flex;
+}
+
+.skills-text {
+    width: 80%;
+    margin-right: 5rem;
+
+}
+
+.skills-text ul {
+    margin-bottom: 0.3rem;
+    line-height: 1.6rem;
+    padding-left: 1.2rem;
+}
+
+.skills-imgs {
+    max-width: 50%;
+    float: left;
+}
+
+.skills-img {
+    width: 100px;
+    height: 100px;
+    margin-left: 0.7rem;
+}
+
+/* 
+
+
+## More Section
+
+
+*/
+
+.about-me--more-container {
+    margin-bottom: 4rem;
+    color: #e3e3e3;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.about-me--more {
+    margin-bottom: 4rem;
+}
+
+.more-linked-in {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* 
+
+
+## Global Classes for about-me
+
+
+*/
+
+.end {
+    border-bottom: #fff solid 0.3rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+.sub-title {
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+    font-size: 2rem;
+}
