@@ -10,14 +10,18 @@ function HeroSection() {
             <div className="hero-btns">
                 <Button className='btns'
                     buttonStyle="btn--outline"
-                    buttonSize='btn--large'>
+                    buttonSize='btn--large'
+                    buttonLink='/Resume-Ahmed-Khaled.pdf'
+                >
                     Download Resume
                 </Button>
             </div>
             <div className="hero-btns">
                 <Button className='btns'
                     buttonStyle="btn--primary"
-                    buttonSize='btn--large'>
+                    buttonSize='btn--large'
+                    buttonLink='/Resume-Ahmed-Khaled.pdf'
+                >
                     WATCH TRAILER <i className="far fa-play-circle" />
                 </Button>
             </div>
