@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/pages/Home";
 import AboutMe from "./components/pages/AboutMe";
 import ContactMe from "./components/pages/ContactMe";
+import Footer from "./components/Footer"
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                     <Route path='/about-me' component={AboutMe} />
                     <Route path='/contact-me' component={ContactMe} />
                 </Switch>
+                <Footer />
             </Router>
         </>
     );

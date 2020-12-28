@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../Footer';
 import './ContactMe.css';
 
 function ContactMe() {
@@ -197,7 +196,6 @@ function ContactMe() {
 
                 </div>
             </div>
-            <Footer></Footer>
         </div >
     )
 }

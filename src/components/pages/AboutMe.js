@@ -1,6 +1,5 @@
 import React from 'react';
 import './AboutMe.css';
-import Footer from './../Footer'
 
 function AboutMe() {
     return (
@@ -118,7 +117,6 @@ function AboutMe() {
                     For further information about Education, And Work Experiance etc Plaese check <a className="more-linked-in" href="https://www.linkedin.com/in/ahmedelbedfy/" target="_blank" rel='noopener noreferrer'>Linked in.</a>
                 </small>
             </section>
-            <Footer></Footer>
 
         </div>
     )
