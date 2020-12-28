@@ -223,6 +223,10 @@
         width: unset;
         margin-left: 5;
     }
+    
+    .about-me--contact-me-head {
+        display: block;
+    }
 
 }
 
@@ -243,10 +247,6 @@
 
     .about-me--info-text {
         margin: 0;
-    }
-
-    .about-me--contact-me-head {
-        display: block;
     }
 
     .skills-text ul {
