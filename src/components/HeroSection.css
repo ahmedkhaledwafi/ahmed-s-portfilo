@@ -48,6 +48,15 @@ video {
   margin-left: 4px;
 }
 
+@media screen and (max-width: 1200px) {
+
+  .hero-padding {
+    padding-top: 5rem;
+    background-color: #000;
+  }
+
+}
+
 @media screen and (max-width: 960px) {
   .hero-container > h1 {
     font-size: 70px;
