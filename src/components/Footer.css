@@ -43,7 +43,10 @@
   .social-icon-link {
     color: #fff;
     font-size: 24px;
-    margin-left: 1rem;
+    width: 1.3rem;
+    align-items: center;
+    text-align: center;
+    margin: 0 1rem;
   }
   
   .social-media {
