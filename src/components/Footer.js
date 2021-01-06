@@ -70,7 +70,7 @@ function Footer() {
 
                         <a
                             rel='noopener noreferrer'
-                            class='social-icon-link twitter'
+                            class='social-icon-link linkedin'
                             href='https://www.linkedin.com/in/ahmedelbedfy/'
                             target='_blank'
                             aria-label='LinkedIn'

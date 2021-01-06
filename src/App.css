@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Ubuntu:wght@300;400;700&display=swap');
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +8,10 @@
   }
 
   body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .primay-color{
+    color:#ffe4c4 ;
   }
   

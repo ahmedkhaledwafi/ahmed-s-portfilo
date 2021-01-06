@@ -80,12 +80,25 @@
     display: flex;
     align-items: center;
     margin-bottom: 16px;
+    justify-content: center;
   }
   
   .website-rights {
     color: #fff;
     margin-bottom: 16px;
     margin-left: 3rem;
+  }
+
+  .facebook:hover{
+    color: #1773EA;
+  }
+
+  .github:hover {
+    color:#E0E0E0;
+  }
+
+  .linkedin:hover {
+    color:#1B88AE;
   }
   
   @media screen and (max-width: 820px) {
