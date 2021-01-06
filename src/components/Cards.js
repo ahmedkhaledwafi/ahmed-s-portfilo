@@ -11,6 +11,18 @@ function Cards() {
                 <div className="cards__wrapper">
                     <ul className="cards__items">
                         <CardItem
+                            src='images/E-Commerce.png'
+                            text='E-Commerce website power by Commerce.js'
+                            label='React/Material-ui'
+                            path='https://ak-e-commerce.netlify.app/'
+                        />
+                        <CardItem
+                            src='images/Front-End-Dev.png'
+                            text='Example for Portfilo'
+                            label='Html/CSS/JS/GSAP'
+                            path='https://ahmed-elbedfy.netlify.app/'
+                        />
+                        <CardItem
                             src='images/TRVL.png'
                             text='TRVL Vacations offers website'
                             label='React'
