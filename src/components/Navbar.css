@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Ubuntu:wght@300;400;700&display=swap');
+
+
 .navbar {
   background: #000;
   height: 80px;
@@ -9,6 +12,8 @@
   top: 0;
   z-index: 999;
   font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
 }
 
 .navbar-container {

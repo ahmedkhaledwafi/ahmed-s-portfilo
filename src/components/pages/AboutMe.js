@@ -20,7 +20,7 @@ function AboutMe() {
                     Hello there!
                     <br />
                     <br />
-                    <apan>This is my Story How I got hooked into Software Development</apan> it all starts When I was a kid I enjoyed computer games so much, and I always wonder how Computers work?
+                    <apan>This is my Story of How I got hooked into Software Development</apan> it all starts When I was a kid I enjoyed computer games so much, and I always wonder how Computers work?
                     <br />
                     <br />
                     Let me introduce you to how I found out. In 2016 I asked a friend of mine who was a computer science student how computers work?
