@@ -1,9 +1,42 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'
+import './Navbar.css';
+import { TweenLite, Power3 } from 'gsap'
 
 function Navbar() {
     const [click, setClick] = useState(false);
+
+    const logo = useRef(null);
+    const headerTitle1 = useRef(null);
+    const headerTitle2 = useRef(null);
+    const headerTitle3 = useRef(null);
+
+    useEffect(() => {
+        TweenLite.from(logo.current, {
+            opacity: 0,
+            duration: 2,
+            x: -60,
+            ease: Power3
+        })
+        TweenLite.from(headerTitle1.current, {
+            opacity: 0,
+            duration: 2,
+            x: 60,
+            ease: Power3
+        })
+        TweenLite.from(headerTitle2.current, {
+            opacity: 0,
+            duration: 3,
+            x: 80,
+            ease: Power3
+        })
+        TweenLite.from(headerTitle3.current, {
+            opacity: 0,
+            duration: 4,
+            x: 100,
+            ease: Power3
+        })
+    }, [])
 
     function handleClick() { setClick(!click); }
     function closeMobileMenu() { setClick(false); }
@@ -12,7 +45,7 @@ function Navbar() {
         <>
             <nav className="navbar">
                 <div className="navbar-container">
-                    <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+                    <Link ref={logo} to="/" className="navbar-logo" onClick={closeMobileMenu}>
 
                         <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path opacity="0.9" d="M77 38.5C77 59.763 59.763 77 38.5 77C17.237 77 0 59.763 0 38.5C0 17.237 17.237 0 38.5 0C59.763 0 77 17.237 77 38.5Z" fill="url(#paint0_linear)" />
@@ -35,17 +68,17 @@ function Navbar() {
                     </div>
 
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                        <li className="nav-item">
+                        <li ref={headerTitle1} className="nav-item">
                             <Link to="/" className='nav-links' onClick={closeMobileMenu}>
                                 Home
                             </Link>
                         </li>
-                        <li className="nav-item">
+                        <li ref={headerTitle2} className="nav-item">
                             <Link to='/about-me' className='nav-links' onClick={closeMobileMenu}>
                                 About
                             </Link>
                         </li>
-                        <li className="nav-item">
+                        <li ref={headerTitle3} className="nav-item">
                             <Link to="/contact-me" className='nav-links' onClick={closeMobileMenu}>
                                 Contact
                             </Link>
