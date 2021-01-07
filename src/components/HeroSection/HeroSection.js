@@ -1,7 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import { Button } from '../Button/Button';
 import './HeroSection.css';
-import { TweenMax, Power3 } from 'gsap'
+import { TweenMax, Power3 } from 'gsap';
+import { CSSPlugin } from 'gsap/CSSPlugin';
 
 const C = CSSPlugin; // eslint-disable-line
 
