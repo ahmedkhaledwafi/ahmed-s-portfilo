@@ -1,40 +1,28 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import { TweenLite, Power3 } from 'gsap'
+import { TweenLite, Power3, stagger } from 'gsap'
 
 function Navbar() {
     const [click, setClick] = useState(false);
 
     const logo = useRef(null);
-    const headerTitle1 = useRef(null);
-    const headerTitle2 = useRef(null);
-    const headerTitle3 = useRef(null);
+    const link = useRef([]);
 
     useEffect(() => {
         TweenLite.from(logo.current, {
             opacity: 0,
             duration: 2,
+            y: -60,
             x: -60,
             ease: Power3
         })
-        TweenLite.from(headerTitle1.current, {
+        TweenLite.staggerFrom(link.current, 1, {
             opacity: 0,
             duration: 2,
             x: 60,
-            ease: Power3
-        })
-        TweenLite.from(headerTitle2.current, {
-            opacity: 0,
-            duration: 3,
-            x: 80,
-            ease: Power3
-        })
-        TweenLite.from(headerTitle3.current, {
-            opacity: 0,
-            duration: 4,
-            x: 100,
-            ease: Power3
+            ease: Power3,
+            stagger: "0.5"
         })
     }, [])
 
@@ -68,17 +56,17 @@ function Navbar() {
                     </div>
 
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                        <li ref={headerTitle1} className="nav-item">
+                        <li ref={element => { link.current[0] = element; }} className="nav-item">
                             <Link to="/" className='nav-links' onClick={closeMobileMenu}>
                                 Home
                             </Link>
                         </li>
-                        <li ref={headerTitle2} className="nav-item">
+                        <li ref={element => { link.current[1] = element; }} className="nav-item">
                             <Link to='/about-me' className='nav-links' onClick={closeMobileMenu}>
                                 About
                             </Link>
                         </li>
-                        <li ref={headerTitle3} className="nav-item">
+                        <li ref={element => { link.current[2] = element; }} className="nav-item">
                             <Link to="/contact-me" className='nav-links' onClick={closeMobileMenu}>
                                 Contact
                             </Link>
