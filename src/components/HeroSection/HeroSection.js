@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Button } from '../Button/Button';
 import './HeroSection.css';
-import { TweenLite, Power3, stagger } from 'gsap'
+import { TweenLite, Power3 } from 'gsap'
 
 function HeroSection() {
 
