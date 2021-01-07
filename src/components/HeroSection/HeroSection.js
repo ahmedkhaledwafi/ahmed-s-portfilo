@@ -1,14 +1,16 @@
 import React, { useRef, useEffect } from 'react';
 import { Button } from '../Button/Button';
 import './HeroSection.css';
-import { TweenLite, Power3 } from 'gsap'
+import { TweenMax, Power3 } from 'gsap'
+
+const C = CSSPlugin; // eslint-disable-line
 
 function HeroSection() {
 
     const hero = useRef([]);
 
     useEffect(() => {
-        TweenLite.staggerFrom(hero.current, 1, {
+        TweenMax.staggerFrom(hero.current, 1, {
             opacity: 0,
             duration: 2,
             y: 60,
