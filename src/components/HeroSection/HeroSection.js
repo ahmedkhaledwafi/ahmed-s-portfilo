@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Button } from '../Button/Button';
 import './HeroSection.css';
 import { TweenLite, Power3 } from 'gsap'
