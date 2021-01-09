@@ -29,14 +29,16 @@ function Footer() {
             })
         })
 
-        gsap.from(footerSocialIcon.current, {
-            scrollTrigger: footerSocialIcon.current,
-            opacity: 0,
-            duration: 2,
-            y: 60,
-            x: 60,
-            ease: Power3,
-            stagger: "0.5",
+        footerSocialIcon.current.forEach((item) => {
+            gsap.from(item, {
+                scrollTrigger: item,
+                opacity: 0,
+                duration: 2,
+                y: 60,
+                x: 60,
+                ease: Power3,
+                stagger: "0.4",
+            })
         })
 
         gsap.from(footerLogo.current, {
