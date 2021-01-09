@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Button } from '../Button/Button';
 import './HeroSection.css';
-import { gsap, Power3 } from 'gsap';
+import { gsap, Power3, Circ } from 'gsap';
 
 
 function HeroSection() {
@@ -45,6 +45,7 @@ function HeroSection() {
     // Animation
 
     const hero = useRef([]);
+    const arrow = useRef(null);
 
     useEffect(() => {
 
@@ -55,6 +56,30 @@ function HeroSection() {
             ease: Power3,
             stagger: "0.5"
         })
+
+        let tl = gsap.timeline();
+
+        tl.fromTo(arrow.current,
+            {
+                duration: 2,
+                y: -10,
+                ease: Circ,
+                opacity: 0,
+            },
+            {
+                opacity: 1,
+                duration: 2,
+                y: 30,
+                ease: Circ,
+            })
+            .to(arrow.current,
+                {
+                    opacity: 0,
+                    duration: 1,
+                    y: 90,
+                    ease: Circ,
+                }
+            )
 
         changeText();
 
@@ -85,6 +110,7 @@ function HeroSection() {
                     WATCH TRAILER <i className="far fa-play-circle" />
                 </Button>
                 </div> */}
+                <div ref={arrow} className="hero--down-arrow">&#10148;</div>
             </div>
         </>
     )
