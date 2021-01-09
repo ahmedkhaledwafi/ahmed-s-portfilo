@@ -1,0 +1,8 @@
+.not-found{
+    background-color: #000;
+    height: 45vh;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    border: #fff 1rem solid;
+}

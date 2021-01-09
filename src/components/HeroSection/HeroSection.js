@@ -68,7 +68,7 @@ function HeroSection() {
             },
             {
                 opacity: 1,
-                duration: 2,
+                duration: 4,
                 y: 30,
                 ease: Circ,
             })
@@ -76,7 +76,7 @@ function HeroSection() {
                 {
                     opacity: 0,
                     duration: 1,
-                    y: 90,
+                    y: 100,
                     ease: Circ,
                 }
             )

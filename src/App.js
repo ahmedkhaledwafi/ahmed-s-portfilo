@@ -7,6 +7,7 @@ import AboutMe from "./components/pages/AboutMe";
 import ContactMe from "./components/pages/ContactMe";
 import Footer from "./components/Footer/Footer";
 import { CSSPlugin } from 'gsap/CSSPlugin';
+import NotFound from "./components/pages/NotFound";
 
 const C = CSSPlugin; // eslint-disable-line
 
@@ -16,9 +17,10 @@ function App() {
             <Router>
                 <Navbar />
                 <Switch>
-                    <Route path="/" exact component={Home} />
-                    <Route path='/about-me' component={AboutMe} />
-                    <Route path='/contact-me' component={ContactMe} />
+                    <Route exact path="/" component={Home} />
+                    <Route exact path='/about-me' component={AboutMe} />
+                    <Route exact path='/contact-me' component={ContactMe} />
+                    <Route path='/*' component={NotFound} />
                 </Switch>
                 <Footer />
             </Router>
