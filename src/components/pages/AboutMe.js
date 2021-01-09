@@ -135,10 +135,10 @@ function AboutMe() {
                 <div className="about-me--head">
 
                     <h1 ref={element => (aboutHead.current[0] = element)} className="about-me--name">Ahmed Khaled</h1>
-                    <h3 ref={element => (aboutHead.current[1] = element)} className="about-me--job-title">Frontend Developer</h3>
+                    <h2 ref={element => (aboutHead.current[1] = element)} className="about-me--job-title">Frontend Developer</h2>
 
                 </div>
-                <img ref={headImage} src="images/aboutme2.png" alt="Ahmed Khaled" className="about-me--img" />
+                <img ref={headImage} src="images/aboutme2.png" alt="Ahmed Khaled Frontend Developer" className="about-me--img" />
 
             </div>
 

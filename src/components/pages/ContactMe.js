@@ -47,12 +47,12 @@ function ContactMe() {
                         <p ref={element => (contactInfo.current[2] = element)}>Giza/Egypt</p>
                         <p ref={element => (contactInfo.current[3] = element)}>Post/Zip Code 12557</p>
                         <br />
-                        <a href="https://api.whatsapp.com/send/?phone=201159593645&text&app_absent=0" rel='noopener noreferrer' target="_blank">
+                        <a title="Send Message" href="https://api.whatsapp.com/send/?phone=201159593645&text&app_absent=0" rel='noopener noreferrer' target="_blank">
                             <p ref={element => (contactLinks.current[0] = element)}>Whats App Message: 01159593645</p>
                         </a>
                         <br />
                         <a href="mailto:ahmed.khaled.hussain@gmail.com" rel='noopener noreferrer' target="_blank">
-                            <p ref={element => (contactLinks.current[1] = element)}> Mail To: ahmed.khaled.hussain@gmail.com</p>
+                            <p title="Email Ahmed" ref={element => (contactLinks.current[1] = element)}> Mail To: ahmed.khaled.hussain@gmail.com</p>
                         </a>
                     </div>
                 </div>

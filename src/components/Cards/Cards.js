@@ -61,12 +61,14 @@ function Cards() {
                             text='E-Commerce website powerd by Commerce.js'
                             label='React/Material-ui'
                             path='https://ak-e-commerce.netlify.app/'
+                            alt="e commerce website view"
                         />
                         <CardItem
                             src='images/Front-End-Dev.png'
                             text='Example for Portfilo'
                             label='Html/CSS/JS/GSAP'
                             path='https://ahmed-elbedfy.netlify.app/'
+                            alt="portfilo website view"
                         />
                     </ul>
                     <ul ref={list2} className="cards__items">
@@ -75,12 +77,14 @@ function Cards() {
                             text='TRVL Vacations offers website'
                             label='React'
                             path='https://react-trvl.netlify.app/'
+                            alt="Travel website view"
                         />
                         <CardItem
                             src='images/Chat-App.png'
                             text='public chat app new messages pop up from top of the chat'
                             label='React/Firebase/Material-UI'
                             path='https://facebook-messenger-clone-s.web.app/'
+                            alt="chat app website view"
                         />
                     </ul>
 
@@ -90,18 +94,21 @@ function Cards() {
                             text='Note Keeper Clone'
                             label='React'
                             path='https://react-notes-keeper.netlify.app/'
+                            alt="note keeper clone website view"
                         />
                         <CardItem
                             src='images/Manipulating-the-DOM.png'
                             text='I did make all functionality in this landing page for a Udacity Project'
                             label='Javascript'
                             path='https://js-landing-page2.netlify.app/'
+                            alt="landing page view"
                         />
                         <CardItem
                             src='images/Simon.png'
                             text='Simon is a game made with Html/CSS/jQuery'
                             label='html/css/jQuery'
                             path='https://js-simon-game.netlify.app/'
+                            alt="simon game website view"
                         />
                     </ul>
                 </div>

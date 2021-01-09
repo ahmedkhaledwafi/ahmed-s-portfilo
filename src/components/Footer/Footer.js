@@ -86,7 +86,7 @@ function Footer() {
 
                     <div class='footer-logo'>
 
-                        <Link to='/' className='social-logo'>
+                        <Link to='/' className='social-logo' title="Home">
                             <svg ref={footerLogo} width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.9" d="M77 38.5C77 59.763 59.763 77 38.5 77C17.237 77 0 59.763 0 38.5C0 17.237 17.237 0 38.5 0C59.763 0 77 17.237 77 38.5Z" fill="url(#paint0_linear)" />
                                 <path d="M49.5 61C37.5 65.5 34.5 68 19 61L9 55.5055L16.4725 16.4945L39.2615 7L62 15L67.5 55.5055L58.5 60.5L45.5 43.5L27 19.5L49.5 61Z" fill="#0B0808" />
@@ -114,6 +114,7 @@ function Footer() {
                             href='https://www.facebook.com/AhmedBedfy/'
                             target='_blank'
                             aria-label='Facebook'
+                            title="facebook"
                         >
                             <i class='fab fa-facebook-f' />
                         </a>
@@ -124,7 +125,8 @@ function Footer() {
                             class='social-icon-link github'
                             href='https://github.com/ahmedkhaledwafi'
                             target='_blank'
-                            aria-label='Facebook'
+                            aria-label='github'
+                            title="github"
                         >
                             <i class="fab fa-github"></i>
                         </a>
@@ -136,6 +138,7 @@ function Footer() {
                             href='https://www.linkedin.com/in/ahmedelbedfy/'
                             target='_blank'
                             aria-label='LinkedIn'
+                            title='LinkedIn'
                         >
                             <i class='fab fa-linkedin' />
                         </a>
