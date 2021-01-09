@@ -80,10 +80,10 @@ function Cards() {
                             alt="Travel website view"
                         />
                         <CardItem
-                            src='images/Chat-App.png'
-                            text='public chat app new messages pop up from top of the chat'
-                            label='React/Firebase/Material-UI'
-                            path='https://facebook-messenger-clone-s.web.app/'
+                            src='images/Super-Chat-App.png'
+                            text='public chat app With Google authentication'
+                            label='React/Firebase'
+                            path='https://ak-superchat.web.app/'
                             alt="chat app website view"
                         />
                     </ul>
