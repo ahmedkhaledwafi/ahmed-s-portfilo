@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import { TweenLite, Power3 } from 'gsap'
+import { TweenLite, Power3 } from 'gsap';
+
 
 function Navbar() {
     const [click, setClick] = useState(false);

@@ -1,26 +1,64 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import './ContactMe.css';
+import { gsap, Power3 } from 'gsap';
+
 
 function ContactMe() {
+
+    const contactImage = useRef(null);
+    const contactInfo = useRef([]);
+    const contactLinks = useRef([]);
+
+    useEffect(() => {
+        gsap.from(contactImage.current, {
+            opacity: 0,
+            duration: 2,
+            x: 60,
+            ease: Power3,
+        })
+        gsap.from(contactInfo.current, {
+            opacity: 0,
+            duration: 2,
+            x: -60,
+            ease: Power3,
+            stagger: "0.5",
+        })
+        gsap.from(contactLinks.current, {
+            opacity: 0,
+            duration: 2,
+            x: -60,
+            ease: Power3,
+            stagger: "0.5",
+        })
+    }, [])
+
+    console.log(contactInfo)
+    console.log(contactImage)
+    console.log(contactLinks)
+
     return (
         <div className="contact-me">
             <div className="contact-me--container">
                 <div className="contact-me--info">
-                    <h1 className="contact-me--head">Keep in Touch</h1>
+                    <h1 className="contact-me--head" ref={element => (contactInfo.current[0] = element)}>Keep in Touch</h1>
                     <br />
                     <div>
-                        <p>Sphinx St - Mashal</p>
-                        <p>Giza/Egypt</p>
-                        <p>Post/Zip Code 12557</p>
+                        <p ref={element => (contactInfo.current[1] = element)}>Sphinx St - Mashal</p>
+                        <p ref={element => (contactInfo.current[2] = element)}>Giza/Egypt</p>
+                        <p ref={element => (contactInfo.current[3] = element)}>Post/Zip Code 12557</p>
                         <br />
-                        <a href="https://api.whatsapp.com/send/?phone=201159593645&text&app_absent=0" rel='noopener noreferrer' target="_blank"><p>Whats App Message: 01159593645</p></a>
+                        <a href="https://api.whatsapp.com/send/?phone=201159593645&text&app_absent=0" rel='noopener noreferrer' target="_blank">
+                            <p ref={element => (contactLinks.current[0] = element)}>Whats App Message: 01159593645</p>
+                        </a>
                         <br />
-                        <a href="mailto:ahmed.khaled.hussain@gmail.com" rel='noopener noreferrer' target="_blank"><p> Mail To: ahmed.khaled.hussain@gmail.com</p></a>
+                        <a href="mailto:ahmed.khaled.hussain@gmail.com" rel='noopener noreferrer' target="_blank">
+                            <p ref={element => (contactLinks.current[1] = element)}> Mail To: ahmed.khaled.hussain@gmail.com</p>
+                        </a>
                     </div>
                 </div>
 
                 <div >
-                    <svg className="moon-img" width="724" height="524" viewBox="0 0 724 524" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg ref={contactImage} className="moon-img" width="724" height="524" viewBox="0 0 724 524" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="390" cy="262" r="262" fill="#C4C4C4" />
                         <g clip-path="url(#clip0)">
                             <g opacity="0.1">

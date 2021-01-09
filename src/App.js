@@ -5,7 +5,10 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/pages/Home";
 import AboutMe from "./components/pages/AboutMe";
 import ContactMe from "./components/pages/ContactMe";
-import Footer from "./components/Footer/Footer"
+import Footer from "./components/Footer/Footer";
+import { CSSPlugin } from 'gsap/CSSPlugin';
+
+const C = CSSPlugin; // eslint-disable-line
 
 function App() {
     return (

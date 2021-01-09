@@ -1,15 +1,61 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import CardItem from './CardItem/CardItem';
 import './Cards.css';
+import { gsap, Power3, } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Cards() {
 
+    const cardsHeader = useRef(null);
+
+    const list1 = useRef(null);
+    const list2 = useRef(null);
+    const list3 = useRef(null);
+
+    useEffect(() => {
+
+        gsap.from(cardsHeader.current, {
+            scrollTrigger: cardsHeader.current,
+            opacity: 0,
+            duration: 2,
+            y: 80,
+            ease: Power3,
+        })
+
+        gsap.from(list1.current, {
+            scrollTrigger: list1.current,
+            opacity: 0,
+            duration: 2,
+            x: -60,
+            ease: Power3,
+        })
+
+        gsap.from(list2.current, {
+            scrollTrigger: list2.current,
+            opacity: 0,
+            duration: 2,
+            x: 60,
+            ease: Power3,
+        })
+
+        gsap.from(list3.current, {
+            scrollTrigger: list3.current,
+            opacity: 0,
+            duration: 2,
+            x: -60,
+            ease: Power3,
+        })
+
+    }, [])
+
     return (
         <div className="cards">
-            <h1>Check out these Amazing Web Apps!</h1>
+            <h1 ref={cardsHeader}>Check out these Amazing Web Apps!</h1>
             <div className="cards__container">
                 <div className="cards__wrapper">
-                    <ul className="cards__items">
+                    <ul ref={list1} className="cards__items">
                         <CardItem
                             src='images/E-Commerce.png'
                             text='E-Commerce website powerd by Commerce.js'
@@ -23,7 +69,7 @@ function Cards() {
                             path='https://ahmed-elbedfy.netlify.app/'
                         />
                     </ul>
-                    <ul className="cards__items">
+                    <ul ref={list2} className="cards__items">
                         <CardItem
                             src='images/TRVL.png'
                             text='TRVL Vacations offers website'
@@ -38,7 +84,7 @@ function Cards() {
                         />
                     </ul>
 
-                    <ul className="cards__items">
+                    <ul ref={list3} className="cards__items">
                         <CardItem
                             src='images/Keeper-App.png'
                             text='Note Keeper Clone'
