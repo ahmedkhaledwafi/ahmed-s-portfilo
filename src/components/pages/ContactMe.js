@@ -32,10 +32,6 @@ function ContactMe() {
         })
     }, [])
 
-    console.log(contactInfo)
-    console.log(contactImage)
-    console.log(contactLinks)
-
     return (
         <div className="contact-me">
             <div className="contact-me--container">

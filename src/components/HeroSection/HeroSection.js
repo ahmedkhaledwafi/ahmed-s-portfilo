@@ -96,7 +96,7 @@ function HeroSection() {
                     <Button className='btns'
                         buttonStyle="btn--outline"
                         buttonSize='btn--large'
-                        buttonLink='/Resume-Ahmed-Khaled.pdf'
+                        buttonLink='/Ahmed Khaled - Frontend Developer.pdf'
                     >
                         Download Resume
                 </Button>

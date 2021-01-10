@@ -67,7 +67,7 @@ video {
 @media screen and (max-width: 960px) {
 
   .hero-padding {
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 
   .hero-container > h1 {
