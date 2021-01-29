@@ -67,7 +67,7 @@ function Footer() {
 
             <div class='footer-logo'>
 
-                <Link to='/' className='social-logo' title="Home">
+                <Link to='/' className='footer-logo-link' title="Home">
 
                     <svg ref={footerLogo} width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path opacity="0.9" d="M77 38.5C77 59.763 59.763 77 38.5 77C17.237 77 0 59.763 0 38.5C0 17.237 17.237 0 38.5 0C59.763 0 77 17.237 77 38.5Z" fill="url(#paint0_linear)" />
@@ -111,7 +111,7 @@ function Footer() {
 
 
 
-                    <small ref={copyright} class='website-rights'>Ahmed Khaled © 2021</small>
+                    <div className='website-rights-container'><small ref={copyright} className='website-rights'>Ahmed Khaled © 2021</small></div>
 
                     <div class='social-icons'>
                         <a
