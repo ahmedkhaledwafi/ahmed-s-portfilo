@@ -53,7 +53,7 @@ function ContactMe() {
                     </div>
                 </div>
 
-                <div >
+                <div>
                     <svg ref={contactImage} className="moon-img" width="724" height="524" viewBox="0 0 724 524" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="390" cy="262" r="262" fill="#C4C4C4" />
                         <g clip-path="url(#clip0)">
