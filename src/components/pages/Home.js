@@ -10,8 +10,6 @@ function Home() {
         <>
             <HeroSection />
             <Cards />
-            <AboutMe />
-            <ContactMe />
         </>
     )
 }
