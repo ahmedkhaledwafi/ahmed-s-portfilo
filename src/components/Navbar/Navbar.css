@@ -38,9 +38,6 @@
 }
 
 .logo-container:hover {
-  position: absolute;
-    top: 0;
-    left: 0;
   transform: rotate(45deg);
   transition: width 2s, height 2s, transform 2s;
 }
@@ -141,6 +138,12 @@
     top: 0;
     left: 0;
     transform: translate(25%, 50%);
+  }
+
+  .logo-container:hover {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .menu-icon {
