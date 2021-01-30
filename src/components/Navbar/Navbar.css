@@ -38,6 +38,9 @@
 }
 
 .logo-container:hover {
+  position: absolute;
+    top: 0;
+    left: 0;
   transform: rotate(45deg);
   transition: width 2s, height 2s, transform 2s;
 }
