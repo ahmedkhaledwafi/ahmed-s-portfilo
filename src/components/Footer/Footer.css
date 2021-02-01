@@ -7,6 +7,8 @@
     align-items: center;
     position: relative;
     bottom: 0;
+    margin: 0 auto;
+    width: 85vw;
   }
   
   .footer-links {
@@ -42,12 +44,13 @@
   }
   
   .footer-link-items a:hover {
-    background-color: #fff;
-    color: #000; 
-    transition: all 0.3s ease-out;
+    background-color: #EDBD64;
+    color: #fff;
+    padding-top: 8px;
+    transition: all 0.3s ease-in;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    border-top: #fff solid 10px;
+    /* border-top: #EDBD64 solid 10px; */
   }
   
   /* Social Icons */
@@ -101,7 +104,7 @@
   }
 
   .footer-logo:hover {
-    transform: rotate(45deg);
+    transform: scale(1.1);
     transition: width 2s, height 2s, transform 2s;
   }
   
@@ -115,8 +118,8 @@
   }
 
   .website-rights-container:hover {
-    transform: rotate(15deg);
-    transition: width 2s, height 2s, transform 2s;
+    transform: rotate(10deg);
+    transition: 500ms;
   }
 
   .facebook:hover{

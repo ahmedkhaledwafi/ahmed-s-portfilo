@@ -12,7 +12,7 @@
   }
 
   .primay-color{
-    color:#ffe4c4 ;
+    color:#EDBD64;
   }
 
   .App {
@@ -21,7 +21,7 @@
   
   .loader {
     text-align: center;
-    background-color: #000;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;

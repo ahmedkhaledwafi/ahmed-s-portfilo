@@ -30,7 +30,7 @@ function App() {
                     ?
                     <div className="loader">
                         <ClipLoader
-                            color="#9F1555"
+                            color="#1A5BD5"
                             loading={"loading"}
                             size="15vw"
                         />

@@ -8,7 +8,7 @@
 */
 
 .end {
-    border-bottom: #fff solid 0.3rem;
+    border-bottom: #EDBD64 solid 0.3rem;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     margin-top: 3rem;
@@ -31,7 +31,7 @@
 
 .about-me {
     padding: 0 4rem;
-    background-color: #000;
+    background-color: #1449AC;
     color: #fff;
     font-weight: 300;
 }
@@ -123,6 +123,11 @@
     text-align: right;
 }
 
+.skills-imgs img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
 .skills-img {
     width: 130px;
     height: 130px;
@@ -140,7 +145,7 @@
 */
 
 .certificate {
-    border-bottom: #fff solid 0.6rem;
+    border-bottom: #EDBD64 solid 0.6rem;
     margin-bottom: 4rem;
     padding-bottom: 2rem;
     /* margin-top: 3rem; */
@@ -150,12 +155,12 @@
 .certifiacte-image-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .certificate-box {
-    max-width: 40rem;
-    margin-bottom: 3rem;
+    max-width: 25rem;
+    margin: 3rem;
     border-radius: 1rem;
     background-color: #fff;
 }
@@ -212,8 +217,7 @@ border: 3px solid #fff;
 }
 
 .more-linked-in:hover {
-    color: #eded;
-    font-size: 1.3rem;
+    color: #EDBD64;
 }
 
 
