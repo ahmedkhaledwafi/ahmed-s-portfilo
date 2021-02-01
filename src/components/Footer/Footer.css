@@ -58,7 +58,10 @@
     align-items: center;
     text-align: center;
     margin: 0 1rem;
+    width: 3rem;
     transition: all 0.3s ease-out;
+    border: 1px solid #000;
+
   }
   
   .social-media {
