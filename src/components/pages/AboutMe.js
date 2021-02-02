@@ -241,7 +241,7 @@ function AboutMe() {
                         <br />
                         <br />
 
-                        <h3 ref={element => { skillsText.current[22] = element; }}>I have a practical understanding of these Concepts/Skills:</h3>
+                        <h3 ref={element => { skillsText.current[22] = element; }}>I have a good base in these tools/topics as well:</h3>
                         <br />
 
                         <ul>
@@ -270,7 +270,7 @@ function AboutMe() {
                         <br />
                         <br />
 
-                        <h3 ref={element => { skillsText.current[20] = element; }}>have a practical understanding of these Concepts/Skills:</h3>
+                        <h3 ref={element => { skillsText.current[20] = element; }}>I have a practical understanding of these Concepts/Skills:</h3>
                         <br />
 
                         <ul>
