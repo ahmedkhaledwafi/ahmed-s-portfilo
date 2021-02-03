@@ -2,9 +2,9 @@
 
 .contact-me {
     padding: 1rem 2rem 2rem 2rem;
-    background-color: #000;
+    background-image: linear-gradient(-30deg, #9bafd9, #25205D);
     color: #C4C4C4;
-    background-image: url('/images/contact.jpg');
+    /* background-image: url('/images/contact.jpg'); */
     /* background-size: 100vw; */
     background-repeat: no-repeat;
 
