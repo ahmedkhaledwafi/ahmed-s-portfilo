@@ -344,6 +344,12 @@ function AboutMe() {
                 <div className="certifiacte-image-container">
 
                     <div className="certificate-box">
+                        <a href="https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/8d141023-f1c7-42db-9892-9a562306f468.pdf" rel="noopener noreferrer" target="_blank">
+                            <img className="certificate-image" src="/images/about/Udacity Nanodefree Graduation Certificate.jpg" alt="certificate" />
+                        </a>
+                    </div>
+
+                    <div className="certificate-box">
                         <a href="https://confirm.udacity.com/XCGLWCUG" rel="noopener noreferrer" target="_blank">
                             <img className="certificate-image" src="/images/about/webDevProf.jpg" alt="certificate" />
                         </a>
