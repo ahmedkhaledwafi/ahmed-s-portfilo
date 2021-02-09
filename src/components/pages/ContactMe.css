@@ -26,8 +26,8 @@
 
 .contact-me--info a:hover {
     text-decoration: none;
-    color: #C4C4C4;
-    font-size: 1.1rem;
+    color: #ffe4c4;
+    /* font-size: 1.1rem; */
 }
 
 .contact-me--head {
