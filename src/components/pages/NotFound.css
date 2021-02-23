@@ -1,8 +1,12 @@
 .not-found{
-    background-color: #000;
-    height: 45vh;
+    background-image: linear-gradient(-30deg, #9bafd9, #25205D);
+    height: 80vh;
     color: #fff;
-    padding: 2rem;
+    padding: 7rem;
+}
+
+.not-found--container {
+    margin: auto;
     text-align: center;
-    border: #fff 1rem solid;
+    justify-self: center;
 }

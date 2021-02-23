@@ -8,7 +8,7 @@
 */
 
 .end {
-    border-bottom: #fff solid 0.3rem;
+    border-bottom: #F8F2F6 solid 0.3rem;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     margin-top: 3rem;
@@ -30,10 +30,16 @@
 */
 
 .about-me {
-    padding: 0 4rem;
-    background-color: #000;
-    color: #fff;
+    background-image: linear-gradient(-30deg, #9bafd9, #25205D);
+    color: #F8F2F6;
     font-weight: 300;
+    
+}
+
+.about-me--container {
+    width: 85vw;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .about-me--head-container {
@@ -194,7 +200,7 @@ border: 3px solid #fff;
 
 .about-me--more-container {
     padding-bottom: 4rem;
-    color: #e3e3e3;
+    color: #fff;
     font-weight: 300;
     font-size: 1rem;
     letter-spacing: 0.2rem;
@@ -209,10 +215,13 @@ border: 3px solid #fff;
     font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
+    width: 6rem;
+    transition: all 0.3s ease-out;
+
 }
 
 .more-linked-in:hover {
-    color:#ffe4c4;
+    color: #25205D;   
 }
 
 

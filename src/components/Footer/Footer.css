@@ -43,12 +43,16 @@
   
   .footer-link-items a:hover {
     background-color: #fff;
-    color: #000; 
+    color: #000;
     transition: all 0.3s ease-out;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-top: #fff solid 10px;
-  }
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
   
   /* Social Icons */
   .social-icon-link {
@@ -61,8 +65,11 @@
     width: 3rem;
     transition: all 0.3s ease-out;
     border: 1px solid #000;
-
-  }
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
   
   .social-media {
     max-width: 1000px;
