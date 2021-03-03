@@ -290,13 +290,28 @@ border: 3px solid #fff;
 
 @media only screen and (max-width: 680px) {
 
+    .about-me {
+        text-align: center;
+    }
 
     .about-me--name {
         font-size: 3em;
+        text-align: center;
     }
 
     .about-me--job-title{
         font-size: 1em;
+        text-align: center;
+
+    }
+
+    .about-me .skills-text {
+        width: unset;
+        margin-right: 0;
+    }
+
+    .about-me .skills-imgs {
+        text-align: unset;
     }
 
     .about-me--img {
@@ -312,5 +327,8 @@ border: 3px solid #fff;
         padding-left: 0;
     }
 
+    .certificate {
+        text-align: unset;
+    }
 
 }

@@ -9,6 +9,7 @@ import Footer from "./components/Footer/Footer";
 import { CSSPlugin } from 'gsap/CSSPlugin';
 import NotFound from "./components/pages/NotFound";
 import ClipLoader from "react-spinners/ClipLoader";
+import Skills from "./components/pages/Skills";
 
 const C = CSSPlugin; // eslint-disable-line
 
@@ -42,6 +43,7 @@ function App() {
                         <Navbar />
                         <Switch>
                             <Route exact path="/" component={Home} />
+                            <Route exact path='/skills' component={Skills} />
                             <Route exact path='/about-me' component={AboutMe} />
                             <Route exact path='/contact-me' component={ContactMe} />
                             <Route path='/*' component={NotFound} />

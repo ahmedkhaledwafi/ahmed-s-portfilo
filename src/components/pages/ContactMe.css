@@ -7,16 +7,17 @@
     /* background-image: url('/images/contact.jpg'); */
     /* background-size: 100vw; */
     background-repeat: no-repeat;
-
+    height: 85vh;
 }
 
 .contact-me--container {
     width: 85vw;
-    height: auto;
+    height: 100%;
     display: flex;
     margin: 0 auto;
     padding-left: 2rem;
     justify-content: space-between;
+    align-items: center;
 }
 
 .contact-me--info a {
@@ -26,8 +27,9 @@
 
 .contact-me--info a:hover {
     text-decoration: none;
-    color: #ffe4c4;
-    /* font-size: 1.1rem; */
+    color: #c4c4c4;
+    border-bottom: 1px solid #fff;
+    /* font-size: 1.1rem; */ 
 }
 
 .contact-me--head {

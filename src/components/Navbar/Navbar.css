@@ -3,7 +3,7 @@
 
 .navbar {
   background: #000;
-  height: 80px;
+  height: 60px;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -14,32 +14,49 @@
   font-weight: bold;
   font-family: 'Ubuntu', sans-serif;
   text-transform: uppercase;
+  border-bottom: 1px solid #fff;
 }
 
 .navbar-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 80px;
-  width: 85vw;
+  width: 80vw;
   margin: 0 auto;
 }
+
+
+/* logo  */
 
 .navbar-logo {
   color: #fff;
   justify-self: start;
-  padding-left: 2rem;
+  /* padding-left: 2rem; */
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   display: flex;
   align-items: center;
   z-index: 3;
 }
 
+.navbar-logo-name{
+  font-size: 24px;
+  width: 100%;
+
+}
+
 .logo-container:hover {
-  transform: rotate(45deg);
   transition: width 2s, height 2s, transform 2s;
+   border-bottom: 2px solid #fff;
+}
+
+/* nav Menu */
+
+.links-container {
+  display: flex;
+  align-items: center;
 }
 
 .nav-menu {
@@ -48,25 +65,25 @@
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 84vw;
+  /* width: 75vw; */
   padding-right: 1rem;
   justify-content: end;
+  border-right: 1px solid #fff;
+  margin-right: 1.2rem;
 }
 
-.nav-item {
-  height: 80px;
-}
+
 
 .nav-links {
   color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   height: 100%;
-  width: 160px;
+  width: 100px;
   justify-content: center;
-  font-size: 1.4rem
+  font-size: 20px;
 }
 
 .nav-links:hover {
@@ -87,37 +104,120 @@
   display: none;
 }
 
-@media screen and (max-width: 1150px) {
-  .nav-menu {
-    padding-right: 0;
-    width: 80vw;
-  }
+
+/* Socila Icons Links */
+
+.social-media {
+  justify-content: center;
 }
 
-@media screen and (max-width: 960px) {
+.navbar-container a{
+  color: #fff;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.navbar .social-media i{
+  padding: 6px;
+  height: 1rem;
+  text-align: center;
+
+}
+.navbar .social-media a{
+  height: 1rem;
+  text-align: center;
+  margin-right: 18px !important;
+
+}
+
+.facebook:hover{
+  background-color: #1773EA;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.github:hover {
+  background-color: #E0E0E0;
+  color: #000;
+  border: 1px solid #fff;
+}
+
+.linkedin:hover {
+  background-color: #fff;
+  color: #1B88AE;
+  border: 1px solid #fff;
+}
+
+
+
+
+@media screen and (max-width: 1150px) {
+  .navbar {
+    height: unset;
+  }
+
+  /* icon */
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 5vw;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+
   .NavbarItems {
     position: relative;
   }
 
-  .nav-menu {
+  .links-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 92vh;
     position: absolute;
     top: 80px;
-    left: -100%;
+    left: -200%;
     opacity: 1;
     transition: all 0.5s ease;
     margin: 0;
   }
 
-  .nav-menu.active {
+  .links-container.active {
     background: #000;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
+  }
+
+  .active .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    border-right: unset;
+    margin-right: unset;
+    padding-right: unset;
+  }
+
+  .active .social-media {
+    display: flex;
+    width: 100%; 
+    height: auto;  
+  }
+
+
+  .active .social-media a {
+    height: 3rem !important;
+    width: 3rem !important;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    padding: 0.5rem;
   }
 
   .nav-links {
@@ -131,30 +231,22 @@
     background-color: #fff;
     color: #242424;
     border-radius: 0;
+    border: none;
   }
 
   .navbar-logo {
     position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
-  }
+    top: 10px;
+    left: 5vw;
+}
 
-  .logo-container:hover {
+  /* .logo-container:hover {
     position: absolute;
     top: 0;
     left: 0;
-  }
+  } */
 
-  .menu-icon {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
+ 
 
   .fa-times {
     color: #fff;
@@ -181,4 +273,17 @@
     color: #242424;
     transition: 250ms;
   }
+
+
+}
+
+@media screen and (max-width: 350px) {
+  .logo-container{
+    font-size: 18px;
+  }
+  .navbar-logo-name{
+    font-size: 18px;
+
+  }
+
 }

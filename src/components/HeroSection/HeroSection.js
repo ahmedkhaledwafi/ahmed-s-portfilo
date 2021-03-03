@@ -88,20 +88,21 @@ function HeroSection() {
     return (
         <>
             <div className="hero-padding" />
-            <div className="hero-container">
-                {/* <video src="/videos/video-1.mp4" autoPlay loop muted /> */}
-                <h1 ref={element => { hero.current[0] = element; }} className="hero-container--header">Search for <span className="primay-color">Talented</span> Frontend Developer</h1>
-                <h2 ref={element => { hero.current[1] = element; }} ><span className="primay-color">{meetWord}</span> Ahmed Khaled</h2>
-                <div ref={element => { hero.current[2] = element; }} className="hero-btns">
-                    <Button className='btns'
-                        buttonStyle="btn--outline"
-                        buttonSize='btn--large'
-                        buttonLink='/Ahmed Khaled - Frontend Developer.pdf'
-                    >
-                        Download Resume
+            <div className="hero">
+                <div class="hero-container">
+                    {/* <video src="/videos/video-1.mp4" autoPlay loop muted /> */}
+                    <h1 ref={element => { hero.current[0] = element; }} className="hero-container--header">Search for <span className="primay-color">Talented</span> Frontend Developer</h1>
+                    <h2 ref={element => { hero.current[1] = element; }} ><span className="primay-color">{meetWord}</span> Ahmed Khaled</h2>
+                    <div ref={element => { hero.current[2] = element; }} className="hero-btns">
+                        <Button className='btns'
+                            buttonStyle="btn--outline"
+                            buttonSize='btn--large'
+                            buttonLink='/Ahmed Khaled - Frontend Developer.pdf'
+                        >
+                            Download Resume
                 </Button>
-                </div>
-                {/* <div className="hero-btns">
+                    </div>
+                    {/* <div className="hero-btns">
                     <Button className='btns'
                     buttonStyle="btn--primary"
                     buttonSize='btn--large'
@@ -110,7 +111,8 @@ function HeroSection() {
                     WATCH TRAILER <i className="far fa-play-circle" />
                 </Button>
                 </div> */}
-                <div ref={arrow} className="hero--down-arrow">&#10148;</div>
+                    <div className="hero--down-arrow arrow-anim">🖗</div>
+                </div>
             </div>
         </>
     )

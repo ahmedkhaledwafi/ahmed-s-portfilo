@@ -151,7 +151,7 @@ function AboutMe() {
                         <br />
                         <br />
                         <span ref={element => (infoText.current[1] = element)}>
-                            This is Story of How I got hooked into Software Development it all starts When I was a kid I enjoyed computer games so much, and I always wonder how Computers work?
+                            This is The Story of How I got hooked into Software Development it all starts When I was a kid I enjoyed computer games so much, and I always wonder how Computers work?
                     </span>
                         <br />
                         <br />

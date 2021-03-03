@@ -38,7 +38,7 @@ function Navbar() {
                     <div className="logo-container">
                         <Link ref={logo} to="/" className="navbar-logo" onClick={closeMobileMenu} title="Home">
 
-                            <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="50" height="50" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.9" d="M77 38.5C77 59.763 59.763 77 38.5 77C17.237 77 0 59.763 0 38.5C0 17.237 17.237 0 38.5 0C59.763 0 77 17.237 77 38.5Z" fill="url(#paint0_linear)" />
                                 <path d="M49.5 61C37.5 65.5 34.5 68 19 61L9 55.5055L16.4725 16.4945L39.2615 7L62 15L67.5 55.5055L58.5 60.5L45.5 43.5L27 19.5L49.5 61Z" fill="#0B0808" />
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M39.2463 6.46466L62.4542 14.6298L68.0414 55.7769L58.365 61.1467L45.1039 43.8053L30.414 24.7482L50.2132 61.2666L49.6755 61.4682C48.5701 61.8827 47.5372 62.2822 46.5604 62.6599C42.284 64.3137 39.0844 65.5511 35.5996 65.8111C31.2843 66.1332 26.5653 64.9653 18.7941 61.4557L18.7763 61.4477L8.44043 55.7686L16.0319 16.1364L39.2463 6.46466ZM39.2765 7.53538L16.9129 16.8527L9.5594 55.2424L19.2235 60.5524C26.9415 64.0365 31.4686 65.1166 35.5252 64.8139C38.849 64.5659 41.8796 63.3951 46.1422 61.7483C46.9732 61.4273 47.8511 61.0881 48.787 60.7342L26.5604 19.7383L27.3959 19.1948L45.8959 43.1948L45.8971 43.1963L58.6348 59.8533L66.9585 55.2342L61.5456 15.3702L39.2765 7.53538Z" fill="black" />
@@ -50,7 +50,7 @@ function Navbar() {
                                     </linearGradient>
                                 </defs>
                             </svg>
-
+                            <h1 className="navbar-logo-name">Ahmed Khaled</h1>
 
                         </Link>
                     </div>
@@ -59,24 +59,66 @@ function Navbar() {
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </div>
 
-                    <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                        <li ref={element => { link.current[0] = element; }} className="nav-item">
-                            <Link to="/" className='nav-links' onClick={closeMobileMenu}>
-                                Home
+                    <div className={click ? 'links-container active' : 'links-container'}>
+                        <ul className='nav-menu'>
+                            <li ref={element => { link.current[0] = element; }} className="nav-item">
+                                <Link to="/" className='nav-links' onClick={closeMobileMenu}>
+                                    Home
                             </Link>
-                        </li>
-                        <li ref={element => { link.current[1] = element; }} className="nav-item">
-                            <Link to='/about-me' className='nav-links' onClick={closeMobileMenu}>
-                                About
+                            </li>
+                            <li ref={element => { link.current[1] = element; }} className="nav-item">
+                                <Link to='/about-me' className='nav-links' onClick={closeMobileMenu}>
+                                    About
                             </Link>
-                        </li>
-                        <li ref={element => { link.current[2] = element; }} className="nav-item">
-                            <Link to="/contact-me" className='nav-links' onClick={closeMobileMenu}>
-                                Contact
+                            </li>
+                            <li ref={element => { link.current[2] = element; }} className="nav-item">
+                                <Link to='/skills' className='nav-links' onClick={closeMobileMenu}>
+                                    Skills
                             </Link>
-                        </li>
+                            </li>
+                            <li ref={element => { link.current[3] = element; }} className="nav-item">
+                                <Link to="/contact-me" className='nav-links' onClick={closeMobileMenu}>
+                                    Contact
+                            </Link>
+                            </li>
 
-                    </ul>
+                        </ul>
+                        <section class='social-media'>
+                        
+                            <a
+                                rel='noopener noreferrer'
+                                class='social-icon-link facebook'
+                                href='https://www.facebook.com/AhmedBedfy/'
+                                target='_blank'
+                                aria-label='Facebook'
+                                title="facebook"
+                            >
+                                <i class='fab fa-facebook-f' />
+                            </a>
+
+                            <a
+                                rel='noopener noreferrer'
+                                class='social-icon-link github'
+                                href='https://github.com/ahmedkhaledwafi'
+                                target='_blank'
+                                aria-label='github'
+                                title="github"
+                            >
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <a
+                                rel='noopener noreferrer'
+                                class='social-icon-link linkedin'
+                                href='https://www.linkedin.com/in/ahmedelbedfy/'
+                                target='_blank'
+                                aria-label='LinkedIn'
+                                title='LinkedIn'
+                            >
+                                <i class='fab fa-linkedin' />
+                            </a>
+                        </section>
+                    </div>
                 </div>
             </nav>
         </>
