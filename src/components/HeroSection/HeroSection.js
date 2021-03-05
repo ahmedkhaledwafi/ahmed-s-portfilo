@@ -111,7 +111,7 @@ function HeroSection() {
                     WATCH TRAILER <i className="far fa-play-circle" />
                 </Button>
                 </div> */}
-                    <div className="hero--down-arrow arrow-anim">🖗</div>
+                    <div className="hero--down-arrow arrow-anim">&#11167;</div>
                 </div>
             </div>
         </>
