@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
 
+    function navToTop() {
+        window.scrollTo(0, 0);
+    }
+
 
     return (
         <div className="footer">
@@ -13,7 +17,7 @@ function Footer() {
                 <div className='wrapper'>
                     <div class='footer-logo'>
 
-                        <Link to='/' className='footer-logo-link' title="Home">
+                        <Link to='/' className='footer-logo-link' title="Home" onClick={navToTop}>
 
                             <svg width="50" height="50" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.9" d="M77 38.5C77 59.763 59.763 77 38.5 77C17.237 77 0 59.763 0 38.5C0 17.237 17.237 0 38.5 0C59.763 0 77 17.237 77 38.5Z" fill="url(#paint0_linear)" />
@@ -40,16 +44,16 @@ function Footer() {
                 <div className='wrapper'>
                     <div class='footer-links'>
 
-                        <Link to="/">
+                        <Link to="/" onClick={navToTop}>
                             <h2>Home</h2>
                         </Link>
-                        <Link to="/about-me">
+                        <Link to="/about-me" onClick={navToTop}>
                             <h2>About</h2>
                         </Link>
-                        <Link to="/skills">
+                        <Link to="/skills" onClick={navToTop}>
                             <h2>Skills</h2>
                         </Link>
-                        <Link to="/contact-me">
+                        <Link to="/contact-me" onClick={navToTop}>
                             <h2>Contact</h2>
                         </Link>
 
