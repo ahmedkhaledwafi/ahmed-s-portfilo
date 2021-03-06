@@ -38,7 +38,7 @@ function HeroSection() {
                 default:
                     console.log("No case match");
             }
-        }, 1000)
+        }, 1500)
 
     }
 

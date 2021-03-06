@@ -28,7 +28,10 @@ function Navbar() {
     }, [])
 
     function handleClick() { setClick(!click); }
-    function closeMobileMenu() { setClick(false); }
+    function closeMobileMenu() {
+        setClick(false);
+        window.scrollTo(0, 0);
+    }
 
     return (
         <>
@@ -84,7 +87,7 @@ function Navbar() {
 
                         </ul>
                         <section class='social-media'>
-                        
+
                             <a
                                 rel='noopener noreferrer'
                                 class='social-icon-link facebook'
