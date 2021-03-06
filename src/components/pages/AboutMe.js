@@ -151,17 +151,15 @@ function AboutMe() {
                         <br />
                         <br />
                         <span ref={element => (infoText.current[1] = element)}>
-                            This is The Story of How I got hooked into Software Development it all starts When I was a kid I enjoyed computer games so much, and I always wonder how Computers work?
-                    </span>
+                            This is The Story of How I got hooked into Software Development it all starts When I was a kid I enjoyed computer games so much, and I always wonder how Computers work?                    </span>
                         <br />
                         <br />
                         <span ref={element => (infoText.current[2] = element)}>
                             Let me introduce you to how I found out. In 2016 I asked a friend of mine who was a computer science student how computers work?
-                    </span>
+                        </span>
                         <br />
                         <span ref={element => (infoText.current[3] = element)}>
-                            and he explains some Zeros and 1’s stuff for me, introduce me to HTML/CSS tutorial and we talk about how the web work.
-                    </span>
+                            and he explained some Zeros and 1’s stuff to me, and he introduced me to the HTML/CSS tutorial and we talked about how the web work.                    </span>
                         <br />
                         <br />
                         <span ref={element => (infoText.current[4] = element)}>
@@ -170,7 +168,7 @@ function AboutMe() {
                         <br />
                         <br />
                         <span ref={element => (infoText.current[5] = element)}>
-                            Back in 2016, I make some cool websites for fun and learning purpose with HTML and CSS later I tried to learn javascript this time it was frustrated, and the tutorial I was learning from wasn’t really for the beginner so I stopped and concentrate more on academic study and got work at event planning job, Which I learn a lot from it like how to lead a small team how to work with the team effectively, time planning, and how to deal with urgent problems.
+                            Back in 2016, I made some cool websites for fun and learning purpose with HTML and CSS later I tried to learn javascript this time it was frustrated, and the tutorial I was learning from wasn’t really for the beginner so I stopped and concentrated more on academic study and got a job at event planning, Which I learn a lot from it like how to lead a small team how to work with the team effectively, time planning, and how to deal with urgent problems.
                     </span>
                         <br />
                         <br />
@@ -180,22 +178,22 @@ function AboutMe() {
                         <br />
                         <br />
                         <span ref={element => (infoText.current[7] = element)}>
-                            I have to say for me learning how to code was so challenging, rewarding, and fun I still remember the moment I produced “Hello World” in the console of my first application, or the first snake game I make with Python I knew I was hooked into the world of software development.
+                            I have to say for me learning how to code was so challenging, rewarding, and fun I still remember the moment I produced “Hello World” in the console of my first application, or the first snake game I made with Python I knew I was hooked into the world of software development.
                     </span>
                         <br />
                         <br />
                         <span ref={element => (infoText.current[8] = element)}>
-                            This was about my learning journey to became a front-end developer a real passioned one, but web and Computer science isn’t my only passion, I’m passionate about Economics, entrepreneurship, How big companies work, and learning new stuff, I’m residing at sites like Coursera, Udacity, Udemy, and many more.
+                            This is my learning journey to become a front-end developer a real passioned one, but web and Computer science isn’t my only passion, I also have passion for Economics, entrepreneurship, How big companies work, and learning new stuff, I’m residing at sites like Coursera, Udacity, Udemy, and many more.
                     </span>
                         <br />
                         <br />
                         <span ref={element => (infoText.current[9] = element)}>
-                            I also join some activities from 2019 and 2020 where I met awesome people, learn awesome skills, and became familiar with many awesome topics. And today I’m building my portfolio to Breaking into the job market.
+                            I also joined some activities from 2019 and 2020 where I met awesome people, learn awesome skills, and became familiar with many awesome topics. And today I’m building my portfolio to Breaking into the job market.
                     </span>
                         <br />
                         <br />
                         <span ref={element => (infoText.current[10] = element)}>
-                            Thank you for reading hope this Summary introduce me very well.
+                            Thank you for reading hope this Summary introduces me very well.
                     </span>
                     </p>
 
