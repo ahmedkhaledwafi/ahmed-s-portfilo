@@ -102,7 +102,7 @@ function Navbar() {
                             <a
                                 rel='noopener noreferrer'
                                 class='social-icon-link github'
-                                href='https://github.com/ahmedkhaledwafi'
+                                href='https://github.com/AhmedElbedfy'
                                 target='_blank'
                                 aria-label='github'
                                 title="github"
